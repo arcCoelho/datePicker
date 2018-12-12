@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="vendor\css\bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+		<link href="bootstrap-datepicker\css\bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="span5 col-md-5" id="sandbox-container">
+				<input type="text" class="form-control" id="dtPick">
+			</div>
+		</div>	
+		
+		<script src="vendor\js\jquery-1.12.4.min.js"></script>
+		<script src="vendor\js\bootstrap.min.js"></script>
+		<script src="bootstrap-datepicker\js\bootstrap-datepicker.min.js"></script>
+		<script src="bootstrap-datepicker\locales\bootstrap-datepicker.pt-BR.min.js"></script>
+		<script>
+			$('#dtPick').datepicker({
+				format: "dd/mm/yyyy",
+				language: "pt-BR",
+				autoclose: true
+			});
+		</script>
+	</body>
+</html>
